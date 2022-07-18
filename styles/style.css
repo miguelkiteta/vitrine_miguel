@@ -1,0 +1,264 @@
+/* Nav */
+*{
+    margin: 0 ;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #dee5e5;
+    font-family: Mina;
+}
+header{
+    background-color: #6b7f82;
+}
+.logo{
+    height: 55px;
+    margin: 20px 0 0 15px;
+    transform: translate(10px);
+}
+nav ul{
+    font-size: 0;
+    display: flex;
+    justify-content:flex-end;
+    transform: translate(-40px, -43px );
+}
+nav ul li{
+    font-size: 35px;
+    list-style-type: none;
+}
+nav ul li a{
+    text-decoration: none;
+    margin-right: 50px;
+    color: white;
+    background-color: black;
+    padding: 8px;
+    transition: all .5s ease-in-out;
+    border-bottom: 2px solid #dee5e5;
+}
+nav ul li a:hover{
+    border-top-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    border-bottom: #dee5e5 5px solid;
+}
+@media screen  and (min-width: 650px)   and (max-width: 1080px) {
+    nav ul{
+        margin-bottom: 10px;
+    }
+    nav ul li a{
+        margin-right: 20px ;
+        font-size: 20px;
+    }
+    nav img{
+        height: 50px;
+    }
+    .logo{
+        height: 50px;
+    }
+}
+@media screen and (max-width:649px){
+    nav ul li a{
+        margin-right: 5px ;
+        font-size: 10px;
+        
+    }
+    nav img{
+        height: 20px;
+    }
+    .logo{
+        height: 20px;
+    }
+}
+/* Partie Slogan */
+
+.Presentation{
+    height: 652px;
+    background-image: url(../img/6397022.webp);
+    background-position: center;
+    background-size: cover;
+}
+.Slogan{
+    color: white;
+    text-align: center;
+    transform: translateY(-336px);
+    font-size: 28px;
+    
+    text-shadow: 4px 2px 4px white;
+    
+}
+
+/* Responsive Slogan */
+
+@media screen and (max-width:414px) {
+    .Slogan{
+        font-size: 20px;
+        color: #F2e4e4;
+    }
+}
+
+/* Produits */
+
+
+@font-face {
+    font-family: Mina;
+    src: url(../font/Mina-Regular.ttf);
+}
+html{
+    scroll-behavior: smooth;
+}
+body .main{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat',sans-serif;
+    background: #DEE5E5;
+}
+body header h1{
+    background-color: #cdcaca;
+    text-align: center;
+    border-bottom: 2px solid white;
+    font-size: 50px;
+}
+.main h1{
+    color: #717171;
+    font-family:'Montserrat',sans-serif;
+    font-size: 30px;
+}
+.main p{
+    font-size: 24px;
+}
+/* la card */
+.main{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* content*/
+.main .left{
+    border: 2px solid #6b7f82;
+}
+
+
+.main .content .card1 .right1{
+    padding: 20px 0%;
+}
+.main .content .card2 .right2{
+    padding: 20px 0%;
+}
+.main .content .card3 .right3{
+    padding: 20px 0%;
+}
+.main .content1 .card4 .right4{
+    padding: 20px 0%;
+}
+.main .content .card5 .right5{
+    padding: 20px 0%;
+}
+.main .content .card6 .right6{
+    padding: 20px 0%;
+}
+
+
+
+
+/* forma mobile */
+@media screen and (max-width:680px){
+    nav .onglets{
+        margin-left: 0px;
+        margin-bottom: 20px;
+    }
+    .main .content{
+        margin: auto;
+        text-align: center;
+    }
+
+    .main .card1 .left1{
+        margin: 10px;
+    }
+    .main .card2 .left2{
+        margin: 10px;
+    }
+    .main .content .card1 .right1 img{
+        height: 200px;
+        width: 200px;
+        margin-top: 0px;
+    }
+    .main .content .card2 .right2 img{
+        height: 200px;
+        width: 200px;
+        margin-top: 0px;
+    }
+    .main .content .card3 .right3 img{
+        height: 200px;
+        width: 200px;
+        margin-top: 0px;
+    }
+    .main .content1 .card4 .right4 img{
+        height: 200px;
+        width: 200px;
+        margin-top: 0px;
+    }
+    .main .content1 .card5 .right5 img{
+        height: 200px;
+        width: 200px;
+        margin-top: 0px;
+    }
+    .main .content1 .card6 .right6 img{
+        height: 200px;
+        width: 200px;
+        margin-top: 0px;
+    }
+
+    .main .content .card1 .card2{
+        display: block;
+    }
+}
+
+/* Contact et Commentaire */
+section .Contact{
+    color: white;
+    background-color: black;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    align-items: center;
+    text-align: center;
+}
+
+.imgadresse, .imgemail, .imgtelephone, .facebook, .twitter, .instagram {
+    width:60px;
+}
+
+.adresse {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    padding-top: 2px;
+    border-top: black solid 5px;
+}
+
+.email {
+    grid-column: 2/2;
+    grid-row: 1/2;
+}
+
+.appeleznous {
+    grid-column: 1/2;
+    grid-row: 2/2;
+}
+
+.nouscontacter {
+    grid-column: 2/2;
+    grid-row: 2/2;
+}
+
+.commentaire {
+    text-align: center;
+}
+
+/* Responsive Contact Telephone*/
+
+@media screen and (max-width:414px) {
+    section .Contact {
+        display: block;
+    }
+}
